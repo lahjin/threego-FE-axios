@@ -1,0 +1,108 @@
+// 전체 감싸는 div
+.MyPageMainBigBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // 내용이 들어가는 영역
+    .MyPageMainContentBox {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        
+        // 사용자 프로필 (배경색 검정색 부분)
+        .UserInfo {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            border: 1px solid #979797;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            min-height: 180px;
+            // 사용자 이미지, 닉네임, 프로필변경 관련
+            .TopArea {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 5px;
+
+                // 사용자 이미지 img태그
+                img {
+                    min-width: 50px;
+                    min-height: 50px;
+                    max-width: 70px;
+                    max-height: 70px;
+                    border-radius: 100%;
+                    margin: 10px;
+                    border: 1px solid #97979750;
+                    background-size: cover;
+                }
+
+            }
+
+            // 자주쓰는 메뉴 바로가기 div
+            .MiddleArea {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin: 5px;
+               
+                a {
+                    width: calc(100% / 3);
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100px;
+                    padding: 5px;
+                    margin: 5px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+
+                    a {
+                        width: 100%;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .PageMoveBox {
+            padding-top: 10px;
+            width: calc(90% + 20px);
+            margin: auto;
+           
+            a {
+                
+                div {
+                    padding: 10px;
+                    padding-left: 0px;
+                    width: calc(100% - 10px);
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid #979797;
+
+                    span {
+                        margin: 5px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

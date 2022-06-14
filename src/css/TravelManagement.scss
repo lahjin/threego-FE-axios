@@ -1,0 +1,92 @@
+.TravelManagementBigBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .TravelManagementContentBox {
+        margin: 15px;
+        margin-top: 50px; 
+        display: flex;
+        flex-direction: column;
+
+        input[type="checkbox"] {
+            margin: 5px;
+            min-width: 20px;
+            min-height: 20px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            cursor: pointer;
+          }
+
+        // 상단 타이틀
+        .Title {
+            margin-bottom: 10px;
+        }
+
+        // 총 몇개인지와 선택삭제부분
+        .SelectAndDeleteBox {
+            margin: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+
+        .NoTravelList {
+            text-align: center;
+        }
+        // 여행지 리스트 form css
+        .ListForm {
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            
+            .ViewBox {
+                display: flex;
+                align-items: center;
+                // 여행 이미지
+                img {
+                    margin: 5px;
+                    min-width: 50px;
+                    min-height: 50px;
+                    max-width: 50px;
+                    max-height: 50px;
+                    border-radius: 100%;
+                    border: 1px solid #979797;
+                }
+
+                .TextBox {
+
+                }
+
+            }
+
+            .BtnBox {
+                display: flex;
+                align-items: center;
+     
+                button {
+                    width: 50px;
+                    padding: 6px;
+                    font-weight: 700;
+                    color: white;
+                    background-color: black;
+                    border: none;
+                    border-radius: 30px;
+                }
+                
+            }
+        }
+    }
+}

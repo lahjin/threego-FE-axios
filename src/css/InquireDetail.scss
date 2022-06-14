@@ -1,0 +1,57 @@
+.InquireDetailBigBox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// InquireDetailContentBox는 사용자 질문, 관리자 답변내용에 대한 scss 입니다.
+.InquireDetailContentBox {
+    margin: 15px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h2 {
+        margin: 10px 0px;
+    }
+
+    .TopArea {
+        display: flex;
+        align-items: center;
+        
+        button {
+            margin: 10px;
+            background-color: black;
+            border: none;
+            border-radius: 100%;
+            min-width: 30px;
+            min-height: 30px;
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .MiddleArea {
+        margin: 10px;
+        margin-top: 0px;
+    }
+
+
+
+    // 사용자 질문에 대한 영역입니다.
+    .UserArea {
+        button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    }
+
+    .AdminArea {
+        
+    }
+    
+}

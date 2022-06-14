@@ -1,0 +1,146 @@
+.CommentsFormBigBox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%;
+    .WriteBigBox {
+        
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid black;
+        // padding값 주기 위해서 div하나 더 만듬
+        .WriteAreaBox {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            padding-bottom: 0px;
+            //댓글 적는 사용자 정보
+            .WriterInfo {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                img {
+                    border-radius: 100%;
+                    border: 1px solid black;
+                    min-width: 30px;
+                    min-height: 30px;
+                    max-width: 30px;
+                    max-height: 30px;
+                }
+
+                p {
+                    margin: 5px;
+                }
+            }
+
+            // textarea영역
+            .TextWrite {
+                width: 100%;
+                min-height: 80px;
+                resize: none;
+            }
+        }
+
+        // 
+        .FinishArea {
+            border-top: 1px solid #676767;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                width: 50px;
+                height: 30px;
+                border-radius: 5px;
+                border: none;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .User {
+        padding: 20px 0 20px 0px;
+        border-bottom: 1px solid #f1f1f1;  
+        .TopArea {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .TopAreaOneBox {
+                display: flex;
+            
+                img {
+                    border-radius: 100%;
+                    border: 1px solid black;
+                    min-width: 50px;
+                    min-height: 50px;
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+        
+                .UserNameAndDay {
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+            }
+
+            .DeleteBtn {
+                margin: 5px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                
+            }
+        }
+    
+        .ContentsArea {
+          .ContentsText {
+              margin-bottom: 5px;
+              font-size: 17px; 
+          }
+        }
+    
+        // 좋아요 기능
+        .ReactionBtnArea {
+            width: max-content;
+            button {
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                width: 70px;
+                height: 35px;
+                border-radius:30px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            button:last-child {
+                background-color: white;
+                color: black;
+                border: 1px solid #676767;
+                margin: 5px;
+            }
+        }
+    }
+
+    .User:last-child {
+        border: none;
+    }
+
+    .NoComments {
+        padding: 20px;
+        text-align: center;
+    }
+    
+}

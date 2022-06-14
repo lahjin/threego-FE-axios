@@ -1,0 +1,179 @@
+@mixin ellipsis($line-cnt, $line-height) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-cnt; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: $line-height;
+    height: $line-height * $line-cnt; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
+
+.ReviewManagementBigBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ReviewManagementContentBox {
+        margin: 15px;
+        margin-top: 50px;
+        
+        .TopArea {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .SelectAndDeleteBox {
+                margin: 5px 0px;
+                display: flex;
+                justify-content: space-between;
+                .SelectBox {
+                    display: flex;
+                    align-items: center;
+
+                    input[type="checkbox"] {
+                        margin: 5px;
+                        min-width: 20px;
+                        min-height: 20px;
+                        border-radius: 50%;
+                        border: 1px solid #999;
+                        appearance: none;
+                        cursor: pointer;
+                      }
+                    
+                      input[type="checkbox"]:checked {
+                        background: black;
+                        border: none;
+                      }
+                }
+                
+                .Delete {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .MiddleArea {
+            
+           .NoReview {
+               text-align: center;
+           }
+
+            input[type="checkbox"] {
+                min-width: 20px;
+                min-height: 20px;
+                border-radius: 50%;
+                border: 1px solid #999;
+                appearance: none;
+                cursor: pointer;
+              }
+            
+              input[type="checkbox"]:checked {
+                background: skyblue;
+              }
+
+            // 리뷰 컨텐츠들 css
+            .ReviewForm {
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px rgba(44, 44, 44, 0.5);
+                padding: 10px;
+                max-width: 500px;
+              
+                .MiddleTopArea{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    // 여행지 이름, 별점
+                    .NameAndScore {
+
+                        // svg = StarIcon
+                        svg {
+                            margin-top: 5px;
+                            font-size: 20px;
+                            color: skyblue;
+                        }
+                    }
+
+                    .MiddleDeleteBtn {
+                        button {
+                            margin: 5px;
+                            padding: 6px;
+                            color: white;
+                            background-color: black;
+                            border: none;
+                            border-radius: 15px;
+                        }
+
+                        button:first-child {
+                            margin: 0px;
+                        }
+                    }
+                }
+
+                .MiddleImageArea {
+                    position: relative;
+                    margin-top: 10px;
+                    display: flex;
+                    overflow: hidden;
+                    
+                    .ImageBox {
+                        display: flex;
+                        transition: 0.7s;
+                        img {
+                            min-width: auto;
+                            max-width: 100%;
+                            background-size: cover;
+                        }
+                    }
+
+                    .SlideBtn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 99%;
+                        height: 100%;
+                        position: absolute;
+
+                        .BtnArea {
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        .Arrow {
+                            color: white;
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                .MiddleMiddleArea {
+                    margin-top: 10px;
+                    text-overflow:ellipsis;
+                    p {
+                        max-height: 65px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                        line-height: 1.2;
+                        text-align: left;
+                        word-wrap: break-word;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3 ;
+                        -webkit-box-orient: vertical;
+                    }
+                    // 리뷰 이미지
+                    img {
+                        border-radius: 10px;
+                        min-width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

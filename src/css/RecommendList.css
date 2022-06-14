@@ -1,0 +1,149 @@
+.locationText {
+    background-color: lightslategray;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.Category-Box {
+    background-color: #000000;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    overflow-x: scroll;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+}
+
+
+.NowLocation {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    font-size: 40px;
+    text-align: center; 
+    color: white;
+}
+
+.Category-Box::-webkit-scrollbar {
+    display: none;
+  }
+
+.Small-Box {
+    display: flex;
+    margin: 12px;
+    width: 100%;
+    height: auto;
+}
+
+
+.SmallBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:max-content;
+    height: 20px;
+    border-radius: 15px;
+    margin: 3px;
+    background-color: white;
+    border: 1px solid #676767;
+    padding: 3px 20px 3px 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.SmallBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.TravelBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.TravelCard {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    color: black;
+}
+
+.TravelCard:last-child {
+    margin-bottom: 20px;
+}
+
+.TravelCard .ImageBox {
+    margin: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TravelCard .ImageBox .recommandImg {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.TextBox {
+    margin: 5px;
+    width: 90%;
+}
+
+ .TextBox span {
+    font-size: 12px;
+}
+
+
+.RecommendBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 937px;
+}
+
+.TravelBox .travelList {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TravelBox .imgarea {
+    color: white;
+    width: 90%;
+    border: 1px solid black;
+    height: 250px;
+    border-radius: 12.5px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+    background-image: url('../img/exampleImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.TravelBox .imgarea a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #676767;
+}

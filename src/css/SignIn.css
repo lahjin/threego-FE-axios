@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.SignInBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100%);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignInBox h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.SignInBox h4 {
+    font-size: 16px;
+}
+
+.shapebox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    margin: 5px;
+    
+}
+
+.shapebox input {
+    width: calc(100% - 10px);
+    height: 30px;
+    padding: 5px;
+    margin: 5px 0px;
+    border: 1px solid #dadada;
+}
+
+.shapebox .true {
+    font-size: 14px;
+    color: green;
+}
+
+.shapebox .false {
+    font-size: 14px;
+    color: red;
+}
+
+.SignInBox .Link {
+    text-decoration: none;
+    color: white;
+}
+
+.SignInBox button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    text-decoration: none;
+}

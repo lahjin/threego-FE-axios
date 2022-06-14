@@ -1,0 +1,161 @@
+.ReviewWriteHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+
+.ReviewArea {
+
+    .GuideText {
+        margin: 3px;
+        margin-bottom: 0px;
+        // input에서 padding: 10을 해서 20px 추가
+        width: calc(80% + 22px);
+        min-height: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: #2e2e2e;
+            font-weight: 500;
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: clac(100%);
+    .PointArea {
+        margin: 130px 0px 50px 0px;
+        
+        h2 {
+            margin-top: -50px;
+            text-align: center;
+        }
+
+       .ScoreBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .Score {
+                font-size: 50px;
+                color: gray;
+            }
+        
+            .yellowStar {
+                color: royalblue;
+            }
+        }
+        }
+        
+        .WriteArea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+            input[type=text] {
+                width: 80%;
+                padding: 10px;
+                min-height: 25px;
+                border-radius: 3px;
+                border: 1px solid black;
+                margin: 5px;
+                font-size: 16px;
+            }
+            .WriteContent {
+                width: 80%;
+                padding: 10px;
+                text-align: left;
+                min-height: 120px;
+                height: auto;
+                font-size: 16px;
+                resize: none;
+                border-radius: 3px;
+                margin: 5px;
+            }
+        
+            .ReviewWriteImageArea {
+                display: flex;
+                width: calc(80% + 22px);
+                padding: 3px;
+
+                img {
+                    min-width: 80px;
+                    max-width: 80px;
+                    min-height: 80px;
+                    max-height: 80px;
+                    margin: 5px;
+                    margin-bottom: 0px;
+                    border-radius: 5px;
+                }
+
+                .ReviewImgLabel {
+                    input[type=file] {
+                        display: none;
+                    }
+                    span {
+                        margin-top: 5px;
+                        font-size: 14px;
+                    }
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-repeat: no-repeat;
+                    min-width: 80px;
+                    max-width: 80px;
+                    min-height: 80px;
+                    max-height: 80px;
+                    border: 1px dashed black;
+                    margin: 5px;
+                    margin-bottom: 0px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        
+        .ReviewWriteBottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            button {
+                margin-top: 30px;
+                width: calc(80% + 22px);
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                background-color: black;
+                transition: 0.3s;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+}
+
+.file-label {
+    margin-top: 30px;
+    background-color: #5b975b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 65%;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .file {
+    display: none;
+  }

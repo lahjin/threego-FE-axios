@@ -1,0 +1,74 @@
+/* 바텀 */
+
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    background-color: #000000e7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+  
+  
+  .bottom .topText {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom .topText h3 {
+    font-size: 30px;
+  }
+  
+  .bottom .topText .BtnBox {
+    margin: 10px;
+  }
+
+  .bottom .topText button {
+    color: #676767;
+    background-color: #000000e7;
+    border: 1px solid lightgray;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 0px;
+    margin: 5px;
+  }
+
+  .bottom .centerText {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .bottom .bottomText {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .bottom .bottomText span::after {
+    padding: 5px;
+    content: ' |   ';
+  }
+
+  .bottom .bottomText span:last-child:after {
+    content: '';
+  }
+  

@@ -1,0 +1,47 @@
+.NoticeDetailBigBox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .NoticeDetailContentBox{
+       margin: 10px;
+       margin-top: 50px;
+       h1 {
+           margin-bottom: 5px;
+       }
+
+       .NoticeDetailContent {
+           margin-top: 10px;
+           margin: 5px;
+           color: black;
+           min-height: 400px;
+           header {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              margin-bottom: 10px;
+              p:first-child {
+                font-weight: 700;
+                max-width: 280px;
+                margin-bottom: 5px;
+              }
+          }
+
+          .NoticeDetailTextContent {
+              display: flex;
+              justify-content: space-around;
+              flex-direction: column;
+              margin-top: 10px;
+              margin-bottom: 10px;
+          }
+    
+        img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+          
+       }
+    }
+}
+

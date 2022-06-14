@@ -1,0 +1,67 @@
+.InquireManagementBigBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .InquireManageMentContentBox {
+        margin: 15px;
+        margin-top: 50px;
+
+        input[type="checkbox"] {
+            margin: 5px;
+            min-width: 20px;
+            min-height: 20px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            cursor: pointer;
+          }
+
+
+        // 상단 총갯수와 선택삭제 부분
+        .SelectAndDeleteBox {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .SelectBox {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .InquireForm{
+            display: flex;
+            padding: 10px;
+            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+
+            .BoxOne {
+                display: flex;
+                align-items: center;
+                // 제목과 작성날짜
+                .TitleAndWriteDays {
+                    margin: 5px;
+                }                 
+            }
+
+            button {
+                width: 50px;
+                padding: 6px;
+                font-weight: 700;
+                color: white;
+                background-color: black;
+                border: none;
+                border-radius: 30px;
+            }
+        }
+        .NoInquireList {
+            text-align: center;
+        }
+
+    }   
+}

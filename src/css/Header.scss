@@ -1,0 +1,97 @@
+/* 헤더 로고 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.Header{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  transition: 0.2s;
+
+  h3 {
+    width: 115px;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+    color: whitesmoke;
+    text-decoration:none;
+  }
+
+  li {
+    width: 65%;
+    margin: 10px;
+    list-style: none outside;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .menuIcon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+  }
+
+    /* 토글메뉴 */
+  .show-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 51px;
+    width: 100%;
+    height: calc(100%);
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s;
+    z-index: 3;
+  }
+    
+  .hide-menu{
+    position: fixed;
+    right: 0;
+    top: 51px;
+    width: 0%;
+    height: 100%;
+    list-style-type: none;
+    background-color: white;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  
+  .loginButton {
+    background-color: royalblue;
+    width: 40%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    margin: 5px;
+  }
+  
+  .loginButton > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+  
+
+  
+  /* 헤더 끝 */

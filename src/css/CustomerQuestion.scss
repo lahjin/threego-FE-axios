@@ -1,0 +1,93 @@
+.CustomerQuestionBigBox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.CustomerQuestionBox {
+    margin: 15px;
+    margin-top: 50px;
+    
+    h3  {
+        margin: 10px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .Category {
+        border-radius: 10px;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    // 질문에 대한 css 입니다.
+    .QuestionArea {
+        display: flex;     
+        align-items: center;
+        padding: 10px;
+        button {
+            border: none;
+            border-radius: 100%;
+            min-width: 30px;
+            max-width: 30px;
+            min-height: 30px;
+            max-height: 30px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+
+        .TextArea {
+            margin: 10px;
+            p {
+                font-size: 16px;
+            }
+    
+            p:first-child {
+                font-weight: 700;
+            }   
+        }
+
+    }
+
+    // 답변에 대한 css 입니다.
+    .AnswerArea {
+        display: flex;     
+        align-items: flex-start;
+        border-top: 1px solid black;
+        padding: 10px;
+        
+        background-color: black;
+        color: white;
+        button {
+            border: none;
+            border-radius: 100%;
+            min-width: 30px;
+            max-width: 30px;
+            min-height: 30px;
+            max-height: 30px;
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .TextArea {
+            padding: 10px;
+            padding-top: 5px;
+            p {
+                font-size: 16px;
+            }
+    
+            p:first-child {
+                font-weight: 700;
+            }   
+
+
+        }
+    }
+
+}
